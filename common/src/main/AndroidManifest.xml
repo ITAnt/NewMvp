@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miekir.common" >
+    <application>
+        <!--authorities需要是唯一的，随着包名变化而变化，否则一个手机只能有一个项目引入这个库-->
+        <provider
+            android:name=".provider.CommonInstaller"
+            android:authorities="${applicationId}.common"
+            android:exported="false"/>
+    </application>
+</manifest>
